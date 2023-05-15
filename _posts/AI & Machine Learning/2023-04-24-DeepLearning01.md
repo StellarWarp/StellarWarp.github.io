@@ -1,3 +1,7 @@
+---
+math: true
+---
+
 ## 神经网络
 
 The basic structure of a neural network consists of multiple layers of neurons, each layer performing a specific type of computation on the input data. The first layer, known as the input layer, receives the raw input data, which is then passed through one or more hidden layers before being processed by the final output layer.
