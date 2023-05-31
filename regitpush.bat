@@ -6,7 +6,7 @@ set branch=master
 set retry_interval=300
 
 :retry
-git push %remote% %branch%
+git push
 
 if %errorlevel% neq 0 (
     echo Push failed. Retrying in %retry_interval% seconds...
