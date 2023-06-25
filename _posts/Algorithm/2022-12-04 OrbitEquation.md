@@ -1,4 +1,10 @@
-# 限制性多体模拟
+---
+layout: post
+title: 限制性多体模拟
+categories: markdown Math Algorithm
+tags: [Math]
+math: true
+---
 
 # 介绍
 
