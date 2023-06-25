@@ -299,6 +299,7 @@ v=\sqrt{MG(\frac{2}{r}-\frac{1}{a})}
 $$
 
 速度向量
+
 $$
 \begin{align*}
 \vec{v}_d &= \begin{bmatrix}a\sinh H\\-b\cosh H\\0\end{bmatrix}\\
