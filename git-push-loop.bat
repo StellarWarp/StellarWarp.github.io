@@ -3,9 +3,11 @@ setlocal
 
 set remote=origin
 set branch=master
-set retry_interval=300
+set retry_interval=150
 
 :retry
+echo Pushing %branch% to %remote%...
+
 git push
 
 if %errorlevel% neq 0 (
