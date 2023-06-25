@@ -101,7 +101,7 @@ $$
 快速回顾一下椭圆与双曲线的几何性质
 
 
-<img src="https://cdn.jsdelivr.net/gh/StellarWarp/StellarWarp.github.io@main/img/image-20230625103821640.png" alt="image-20230625103821640" style="zoom: 33%;" />
+<img src="https://cdn.jsdelivr.net/gh/StellarWarp/StellarWarp.github.io@main/img/image-20230625103821640.png" alt="image-20230625103821640" style="zoom: 50%;" />
 
 <img src="https://cdn.jsdelivr.net/gh/StellarWarp/StellarWarp.github.io@main/img/image-20230625104500902.png" alt="image-20230625104500902" style="zoom: 80%;" />
 
