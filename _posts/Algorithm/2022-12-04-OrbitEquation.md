@@ -2,8 +2,9 @@
 layout: post
 title: 限制性多体模拟
 categories: markdown Math Algorithm
-tags: [Math]
+tags: [Math,Algorithm]
 math: true
+mermaid: true
 ---
 
 # 介绍
