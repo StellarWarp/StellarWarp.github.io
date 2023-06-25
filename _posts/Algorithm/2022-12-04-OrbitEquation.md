@@ -267,11 +267,8 @@ $$
 
 $$
 \begin{align*}
-\vec{V}= \left \| \begin{bmatrix}
--a\sin E\\
-b\cos E\\
-0
-\end{bmatrix} \right \|\cdot v
+\vec{v}_d &= \begin{bmatrix}-a\sin E\\b\cos E\\0\end{bmatrix}\\
+\vec{V}   &= \frac{\vec{v}_d}{\lVert \vec{v}_d \rVert}\cdot v
 \end{align*}
 $$
 
@@ -302,14 +299,10 @@ v=\sqrt{MG(\frac{2}{r}-\frac{1}{a})}
 $$
 
 速度向量
-
 $$
 \begin{align*}
-\vec{V}= \left \| \begin{bmatrix}
-a\sinh H\\
--b\cosh H\\
-0
-\end{bmatrix} \right \| \cdot v
+\vec{v}_d &= \begin{bmatrix}a\sinh H\\-b\cosh H\\0\end{bmatrix}\\
+\vec{V}   &= \frac{\vec{v}_d}{\lVert \vec{v}_d \rVert}\cdot v
 \end{align*}
 $$
 
@@ -318,8 +311,10 @@ $$
 $R$ 是 仰角 $i$ 赤径 $\Omega$  近心点幅角 $\omega$ 的复合旋转矩阵
 
 $$
-\vec{X_w} = R\cdot\vec{X}\\
-\vec{V_w} = R\cdot\vec{V}\\
+\begin{align*}
+\vec{X_w} &= R\cdot\vec{X}\\
+\vec{V_w} &= R\cdot\vec{V}\\ 
+\end{align*}
 $$
 
 其中旋转的计算方法
@@ -410,8 +405,10 @@ $$
 二阶项 $x−esinx−M−(1 −ecosx)ε+\frac{1}{2}ε^2esinx$ 
 
 $$
+\begin{align*}
 \varepsilon=\frac{x-e \sin x-M}{1-e \cos x-\frac{1}{2} \varepsilon e \sin x}\\
-\varepsilon_{n+1}=\frac{x_{n}-e \sin x_{n}-M}{1-e \cos x_{n}-\frac{1}{2} \varepsilon_{n} e \sin x_{n}}\\
+\varepsilon_{n+1}=\frac{x_{n}-e \sin x_{n}-M}{1-e \cos x_{n}-\frac{1}{2} \varepsilon_{n} e \sin x_{n}}\\   
+\end{align*}
 $$
 
 将一阶误差值带入
@@ -449,25 +446,29 @@ $$
 ##### 总结上述的方法
 
 $$
-f^{(0)} = f(x)\\
-\epsilon_1 = \frac{f^{(0)}}{f^{(1)}}\\
-\epsilon_2 = \frac{
+\begin{align*}
+\epsilon_1 &= \frac{f^{(0)}}{f^{(1)}}\\
+\epsilon_2 &= \frac{
 f^{(0)}
 }{
 f^{(1)}-\epsilon_1\frac{f^{(2)}}{2}
 }\\
-\epsilon_3 = \frac{
+\epsilon_3 &= \frac{
 f^{(0)}
 }{
 f^{(1)}-\frac{f^{(2)}-\epsilon_2\frac{f^{(3)}}{3}}{2}
-}\\
+}\\ 
+f^{(0)} &= f(x)\\
+\end{align*}
 $$
 
 写成递归形式
 
 $$
-\epsilon_1 = \frac{f^{(0)}}{f^{(1)}}\\
-f^{(n)}=f^{(n)}-\epsilon_n\frac{f^{(n+1)}}{n+1}\\
+\begin{align*}
+\epsilon_1 &= \frac{f^{(0)}}{f^{(1)}}\\
+f^{(n)}&=f^{(n)}-\epsilon_n\frac{f^{(n+1)}}{n+1}\\
+\end{align*}
 $$
 
 
@@ -529,12 +530,14 @@ $$
 这里的的公式推导涉及定积分初值的确定，内容已经有点多了，这里直接给出最终的计算方法
 
 $$
-\mu=MG\\
-Ws=\frac{\vec{V}^2 }{2}-\frac{\mu}{\left | \vec{X} \right | }  \\
-a=-\frac{\mu}{2W_s} \\
-\vec{L} =\vec{X}\times \vec{V}  \\
-p=\frac{\vec{L}^2 }{\mu} \\
-e=\sqrt[]{1-\frac{p }{a} } 
+\begin{align*}
+\mu &=MG\\
+Ws  &=\frac{\vec{V}^2 }{2}-\frac{\mu}{\left | \vec{X} \right | }  \\
+a   &=-\frac{\mu}{2W_s} \\
+\vec{L} &=\vec{X}\times \vec{V}  \\
+p&=\frac{\vec{L}^2 }{\mu} \\
+e&=\sqrt[]{1-\frac{p }{a} } 
+\end{align*}
 $$
 
 ### 偏近点角与平近角
@@ -542,31 +545,39 @@ $$
 对于椭圆轨道
 
 $$
-\cos E=1-\frac{r}{a}\\
-\sin E =\frac{\vec{X}\cdot \vec{V} }{\sqrt[]{a\mu } }\\
-M=E-e\sin E
+\begin{align*}
+\cos E &= 1-\frac{r}{a}\\
+\sin E &=\frac{\vec{X}\cdot \vec{V} }{\sqrt[]{a\mu } }\\
+M &= E-e\sin E
+\end{align*}
 $$
 
 对于双曲轨道
 
 $$
-\cosh H = \frac{1+\frac{r}{a} }{e}\\
-\sinh H=\frac{\vec{X}\cdot \vec{V} }{e\sqrt[]{-a\mu } }\\
-M=e\sinh H-H
+\begin{align*}
+\cosh H &= \frac{1+\frac{r}{a} }{e}\\
+\sinh H &= \frac{\vec{X}\cdot \vec{V} }{e\sqrt[]{-a\mu } }\\
+M &= e\sinh H-H
+\end{align*}
 $$
 
 ### 仰角
 
 $$
-\sin i=\frac{\left | \vec{L_{xy}}   \right | }{\left | \vec{L_{}}   \right |}\\
-\cos i=\frac{L_z}{\left | \vec{L}  \right | } 
+\begin{align*}
+\sin i&=\frac{\left | \vec{L_{xy}}   \right | }{\left | \vec{L_{}}   \right |}\\
+\cos i&=\frac{L_z}{\left | \vec{L}  \right | } 
+\end{align*}
 $$
 
 ### 真近点角（如果需要）
 
 $$
-\tan \theta =\frac{\sqrt[]{1-e^2 }\sin E}{\cos E-e} \\
-\tan \theta =-\frac{\sqrt[]{e^2-1 }\sinh H}{\cosh H-e}
+\begin{align*}
+\tan \theta &=\frac{\sqrt[]{1-e^2 }\sin E}{\cos E-e} \\
+\tan \theta &=-\frac{\sqrt[]{e^2-1 }\sinh H}{\cosh H-e}
+\end{align*}
 $$
 
 ## 关系图
