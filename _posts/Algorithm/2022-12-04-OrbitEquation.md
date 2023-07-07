@@ -108,8 +108,7 @@ $$
 <figure>
 <img src="https://cdn.jsdelivr.net/gh/StellarWarp/StellarWarp.github.io@main/img/image-20230625103821640.png" alt="image-20230625103821640" height=300 />
 <img src="https://cdn.jsdelivr.net/gh/StellarWarp/StellarWarp.github.io@main/img/image-20230625104500902.png" alt="image-20230625104500902" height=300 />
-<figure>
-
+</figure>
 
 在椭圆中有
 
