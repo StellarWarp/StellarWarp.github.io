@@ -29,7 +29,7 @@ f[n] * g[n] &= \sum_{m=-\infty}^{\infty} f[m]g[n-m]\\
 \end{align*}
 $$
 
-为什么傅里叶变换可以用来计算离散卷积呢，这里参见 [Convolution Theorem](https://ccrma.stanford.edu/~jos/sasp/Convolution_Theorem.html) 与 [Convolution Theorem DTFT](https://ccrma.stanford.edu/~jos/sasp/Convolution_Theorem_DTFT.html)
+为什么傅里叶变换可以用来计算离散卷积呢，参见 [Convolution Theorem](https://ccrma.stanford.edu/~jos/sasp/Convolution_Theorem.html) 与 [Convolution Theorem DTFT](https://ccrma.stanford.edu/~jos/sasp/Convolution_Theorem_DTFT.html) 这里就不再赘述了
 
 简单来说卷积与傅里叶变换的关系如下
 
