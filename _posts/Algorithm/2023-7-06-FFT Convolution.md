@@ -5,6 +5,7 @@ subtitle: Image Convolution
 categories: markdown Math Algorithm HLSL
 tags: [Math,Algorithm]
 math: true
+mermaid: true
 ---
 
 ## 卷积泛光
