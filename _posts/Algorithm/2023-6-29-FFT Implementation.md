@@ -1,6 +1,6 @@
 ---
 layout: post
-title: FFT-快速傅里叶变换的推导、推广与优化
+title: FFT Implementation
 subtitle: Part 5 - FFT Implementation
 categories: markdown Math Algorithm HLSL
 tags: [Math,Algorithm]
@@ -9,10 +9,12 @@ math: true
 
 ## Taichi Implementation
 
-
+https://github.com/StellarWarp/Taichi-Radix-N-FFT
 
 
 ## HLSL Implementation
+
+https://github.com/StellarWarp/Fast-Fourier-Transform-And-Convolution-On-Unity
 
 ### HLSL Compute Shader
 
@@ -20,16 +22,15 @@ Compute Shader 是一种运行在GPU上的Shader，可以用来进行通用计�
 
 Compute Shader 程序可以看作是对线程组编程的程序
 
-### `group shared memory` 
+### group shared memory
 
 `group shared memory` 相当于一个可编程 L1 Cache，可以用来存储线程组中的数据，这样就可以减少对全局内存的访问，从而提高效率
 
+在FFT中，每个线程组只对某一行或某一列的数据进行操作，因此可以将这一行或这一列的数据存储到`group shared memory`中，这样就可以减少对全局内存的访问
 
+### GPU 存储器层级
 
-
-
-
-
+GPU中的存储器分为 Global Memory、L2 Cache、L1 Cache、Register，其中 Register 是最快的，Global Memory 是最慢的，L1 Cache 与 L2 Cache 位于中间，L1 Cache 与 L2 Cache 的大小都是有限的，因此如果能够将数据存储到 L1 Cache 中，就可以减少对 Global Memory 的访问，从而提高效率
 
 
 

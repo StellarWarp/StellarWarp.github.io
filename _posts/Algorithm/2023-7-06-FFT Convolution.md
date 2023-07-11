@@ -1,6 +1,6 @@
 ---
 layout: post
-title: FFT 的应用
+title: FFT Convolution Application
 subtitle: Image Convolution
 categories: markdown Math Algorithm HLSL
 tags: [Math,Algorithm]
@@ -9,6 +9,8 @@ mermaid: true
 ---
 
 ## 卷积泛光
+
+![image-20230711220530518](https://cdn.jsdelivr.net/gh/StellarWarp/StellarWarp.github.io@main/img/image-20230711220530518.png)
 
 ### 卷积
 
@@ -423,7 +425,6 @@ IFFT2 --> G'
 IFFT2 --> B'
 
 ```
-
 
 
 
