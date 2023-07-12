@@ -5,6 +5,7 @@ subtitle: Part 5 - FFT Implementation
 categories: markdown Math Algorithm HLSL
 tags: [Math,Algorithm]
 math: true
+mermaid: true
 ---
 
 ## Taichi Implementation
