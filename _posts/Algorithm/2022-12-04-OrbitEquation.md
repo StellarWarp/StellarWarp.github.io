@@ -57,7 +57,7 @@ https://github.com/StellarWarp/RestrictedGravitySimulation
 
 https://github.com/StellarWarp/OrbitSnadBox/releases
 
-已知问题：Rest 会导致程序崩溃
+已知问题：Reset 会导致程序崩溃
 
 —————————————————————————————————————————————
 
