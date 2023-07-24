@@ -49,6 +49,18 @@ end
 
 https://github.com/StellarWarp/RestrictedGravitySimulation
 
+———————————————————— 更新 ————————————————————
+
+![image-20230724152433624](https://cdn.jsdelivr.net/gh/StellarWarp/StellarWarp.github.io@main/img/image-20230724152433624.png)
+
+使用 Unity ECS + JobSystem 开发的 Demo
+
+https://github.com/StellarWarp/OrbitSnadBox/releases
+
+已知问题：Rest 会导致程序崩溃
+
+—————————————————————————————————————————————
+
 ## 引力范围
 
 为了能与不同的天体产生互动，同时仍不引入多体引力，整个引力系统被划分为多个引力范围。比如一个恒星与一个行星，物体以最小的引力范围为中心环行。
