@@ -26,6 +26,16 @@ mermaid: true
 
 ## Jacobians Described Transform and Poisson Equation
 
+for a vector function $\vec{f}(u,v)$, the Jacobian is defined as
+$$
+J = \vec{f}(u,v) \nabla^{T}_{uv} =
+\begin{bmatrix}
+\partial f_x/\partial u & \partial f_x/\partial v\\
+\partial f_y/\partial u & \partial f_y/\partial v\\
+\partial f_z/\partial u & \partial f_z/\partial v\\
+\end{bmatrix}
+$$
+
 Jacobians describe the local linear transform of the non-linear transform
 
 Jacobians separately transform **Every Triangle**, and is the source parameters for optimization
