@@ -46,14 +46,14 @@ Solving Poisson Equation to restrict the mapping
 
 ![image-20231024113407660](https://cdn.jsdelivr.net/gh/StellarWarp/StellarWarp.github.io@main/img/image-20231024113407660.png)
 
-$\Phi$ is describe as the target transform not a transform
-
-$\Phi$ is the pre-vertex transform
+$\Phi$ is the transform described by vertex offset
 
 the minimum target is
+
 $$
 \Phi^* = \min_{\phi}\sum_{f_i\in F} |f_i|\| \nabla_i(\Phi)-J_i \|_2^2
 $$
+
 the $|f_i|$ is the area of the triangle, which is the weight term
 
 $\| \nabla_i(\Phi)-J_i \|_2^2$ describes the match between pre-vertex transform and pre pre-triangle transform
@@ -275,7 +275,7 @@ $$
 define 
 
 $$
-L_{ij} = < \nabla \phi_i, \nabla \phi_j>
+L_{ij} =- < \nabla \phi_i, \nabla \phi_j>
 $$
 
 then
@@ -289,14 +289,14 @@ cotan-Laplace operator
 in short, the cotan-Laplace is
 
 $$
-<\Delta u_i, \phi_j> = \frac{1}{2} \sum_{j \in N(i)} (\cot \alpha_{i} + \cot \beta_{i}) (u_i - u_j)
+<\Delta u_i, \phi_j> = \frac{1}{2} \sum_{j \in N(i)} (\cot \alpha_{i} + \cot \beta_{i}) (u_j-u_i)
 $$
 
 
 $$
 L_{ij} = \begin{cases}
-\frac{1}{2}\sum_{j \in N(i)} (\cot \alpha_{i} + \cot \beta_{i}) & i = j\\
--\frac{1}{2}\cot \alpha_{i} + \cot \beta_{i} & i \in N(j)\\
+-\frac{1}{2}\sum_{j \in N(i)} (\cot \alpha_{i} + \cot \beta_{i}) & i = j\\
+\frac{1}{2}\cot \alpha_{i} + \cot \beta_{i} & i \in N(j)\\
 0 & otherwise
 \end{cases}
 $$
