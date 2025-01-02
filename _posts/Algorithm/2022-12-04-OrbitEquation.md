@@ -639,7 +639,7 @@ graph LR
 
 通过方程求解状态矢量的计算量较大，但是求解的结果稳定，考虑采用插值的方法来减少计算量
 
-![image-20221128221304992](C:\Users\Estelle\AppData\Roaming\Typora\typora-user-images\image-20221128221304992.png)
+![image-20221128221304992](https://cdn.jsdelivr.net/gh/StellarWarp/StellarWarp.github.io@main/img/image-20221128221304992.png)
 
 将所有物体的方程求解分布在多帧中，使用插值的方法获取当前帧的位置
 
